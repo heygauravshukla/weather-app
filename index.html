@@ -1,13 +1,24 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Weather.</title>
+    <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+    <main>
+      <section class="weather">
+        <form>
+          <label for="city">City name</label>
+          <input type="search" id="city" placeholder="Enter city name..." />
+          <button type="submit">Get Weather</button>
+        </form>
+        <article class="weather-card" style="display: none"></article>
+      </section>
+    </main>
+
+    <script src="/src/main.js"></script>
   </body>
 </html>
