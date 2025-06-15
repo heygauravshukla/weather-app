@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      open-props:
+        specifier: ^1.7.15
+        version: 1.7.15
     devDependencies:
       vite:
         specifier: ^6.3.5
@@ -290,6 +294,9 @@ packages:
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
+  open-props@1.7.15:
+    resolution: {integrity: sha512-TvyN35N02w1wmIsz6SUInEo0RaVvSvIj794qlHjkmeTFuBYu2vzV6LbZyE5D8/c5UsGtRudl4ScK1jkabPBpGw==}
+
   picocolors@1.1.1:
     resolution: {integrity: sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==}
 
@@ -529,6 +536,8 @@ snapshots:
     optional: true
 
   nanoid@3.3.11: {}
+
+  open-props@1.7.15: {}
 
   picocolors@1.1.1: {}
 
