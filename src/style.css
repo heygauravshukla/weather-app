@@ -186,10 +186,6 @@ main {
   font-weight: var(--fw-medium);
 }
 
-[data-description] {
-  margin-block-start: var(--sz-100);
-}
-
 .extra-details {
   display: grid;
   gap: var(--sz-200);
