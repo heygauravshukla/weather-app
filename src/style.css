@@ -1,3 +1,26 @@
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/public/fonts/poppins/poppins-v23-latin-regular.woff2")
+    format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/public/fonts/poppins/poppins-v23-latin-500.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/public/fonts/poppins/poppins-v23-latin-700.woff2") format("woff2");
+}
+
 :root {
   --clr-text-1: hsl(209 75.7% 21%);
   --clr-text-2: hsl(209 75.8% 32.4%);
@@ -28,7 +51,7 @@
   --br-circle: 50%;
   --br-pill: 100vw;
 
-  --ff-sans: system-ui, sans-serif;
+  --ff-sans: "Poppins", sans-serif;
 
   --fw-regular: 400;
   --fw-medium: 500;
