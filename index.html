@@ -9,13 +9,70 @@
   </head>
   <body>
     <main>
+      <section class="hero">
+        <h1>weather.</h1>
+        <p>Get current weather report for any city.</p>
+      </section>
+
       <section class="weather">
-        <form>
-          <label for="city">City name</label>
+        <form aria-label="Search weather by city">
+          <label for="city" class="visually-hidden">City name</label>
           <input type="search" id="city" placeholder="Enter city name..." />
-          <button type="submit">Get Weather</button>
+          <button type="submit" class="button" aria-label="Get Weather">
+            <span class="visually-hidden">Search</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+            >
+              <path
+                d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"
+              />
+            </svg>
+          </button>
         </form>
-        <article class="weather-card" style="display: none"></article>
+
+        <article class="weather-card" style="display: none" aria-live="polite">
+          <noscript>
+            <p>Please enable JavaScript to view the weather report.</p>
+          </noscript>
+
+          <p data-loading style="display: none">Loading...</p>
+          <p data-error style="display: none">Failed to get weather data!</p>
+
+          <div class="weather-details" style="display: none">
+            <div class="meta-details">
+              <h2>
+                <span data-city>Chandigarh</span>, <span data-country>IN</span>
+              </h2>
+              <p data-temperature>37°</p>
+              <p data-description>moderate rain</p>
+            </div>
+            <dl class="extra-details">
+              <div>
+                <dt>Humidity</dt>
+                <dd data-humidity>52%</dd>
+              </div>
+              <div>
+                <dt>Pressure</dt>
+                <dd data-pressure>1012 hPa</dd>
+              </div>
+              <div>
+                <dt>Wind speed</dt>
+                <dd data-wind>4.09 m/s</dd>
+              </div>
+              <div>
+                <dt>Visibility</dt>
+                <dd data-visibility>10 km</dd>
+              </div>
+            </dl>
+            <p class="calc-time">
+              Report generated at:
+              <time data-time>Jun 16, 12:04pm</time>
+            </p>
+          </div>
+        </article>
       </section>
     </main>
 
