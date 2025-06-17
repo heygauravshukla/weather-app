@@ -197,123 +197,123 @@
   .hero {
     margin-block-start: var(--sz-700);
     text-align: center;
-  }
 
-  .hero h1 {
-    font-size: var(--fs-700);
-    line-height: 1.1;
-    font-weight: var(--fw-medium);
+    h1 {
+      font-size: var(--fs-700);
+      line-height: 1.1;
+      font-weight: var(--fw-medium);
+    }
   }
 
   .weather {
     margin-block: var(--sz-600);
-  }
 
-  .weather form {
-    display: flex;
-  }
+    form {
+      display: flex;
 
-  .weather input[type="search"],
-  .weather button[type="submit"] {
-    border: transparent;
-    background-color: var(--clr-surface-1);
-    padding: var(--sz-400) var(--sz-500);
-  }
+      input[type="search"],
+      button[type="submit"] {
+        border: transparent;
+        background-color: var(--clr-surface-1);
+        padding: var(--sz-400) var(--sz-500);
+      }
 
-  .weather input[type="search"] {
-    min-width: 0;
-    flex-grow: 1;
-    border-start-start-radius: var(--br-400);
-    border-end-start-radius: var(--br-400);
-  }
+      input[type="search"] {
+        min-width: 0;
+        flex-grow: 1;
+        border-start-start-radius: var(--br-400);
+        border-end-start-radius: var(--br-400);
+      }
 
-  .weather button[type="submit"] {
-    display: grid;
-    background-color: var(--clr-text-1);
-    border-end-end-radius: var(--br-400);
-    border-start-end-radius: var(--br-400);
-    transition: 150ms;
+      button[type="submit"] {
+        display: grid;
+        background-color: var(--clr-text-1);
+        border-end-end-radius: var(--br-400);
+        border-start-end-radius: var(--br-400);
+        transition: 150ms;
 
-    &:hover {
-      cursor: pointer;
-      background-color: var(--clr-text-2);
+        &:hover {
+          cursor: pointer;
+          background-color: var(--clr-text-2);
+        }
+
+        & svg {
+          fill: var(--clr-surface-1);
+        }
+      }
     }
 
-    & svg {
-      fill: var(--clr-surface-1);
+    .weather-card {
+      background: linear-gradient(
+        160deg,
+        var(--clr-surface-1),
+        var(--clr-surface-2)
+      );
+      padding: var(--sz-500);
+      border-radius: var(--br-500);
+      margin-block: var(--sz-600);
+
+      [data-loading],
+      [data-error] {
+        text-align: center;
+      }
+
+      .weather-details {
+        display: grid;
+        gap: var(--sz-500);
+
+        @media (width>=35em) {
+          grid-template-columns: 1fr 1fr;
+          align-items: center;
+        }
+
+        .meta-details {
+          background-color: var(--clr-surface-3);
+          padding: var(--sz-500);
+          border-radius: var(--br-400);
+
+          [data-temperature] {
+            font-size: var(--fs-700);
+            font-weight: var(--fw-medium);
+          }
+
+          [data-description] {
+            font-size: var(--fs-400);
+            letter-spacing: -0.025em;
+            font-weight: var(--fw-medium);
+          }
+        }
+
+        .extra-details {
+          display: grid;
+          gap: var(--sz-100);
+
+          div {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
+
+          dd {
+            font-weight: var(--fw-medium);
+          }
+        }
+
+        .calc-time {
+          text-align: center;
+          color: var(--clr-text-2);
+          font-size: var(--fs-200);
+
+          @media (width>=35em) {
+            grid-column: 1/3;
+          }
+
+          [data-time] {
+            font-weight: var(--fw-medium);
+          }
+        }
+      }
     }
-  }
-
-  .weather-card {
-    background: linear-gradient(
-      160deg,
-      var(--clr-surface-1),
-      var(--clr-surface-2)
-    );
-    padding: var(--sz-500);
-    border-radius: var(--br-500);
-    margin-block: var(--sz-600);
-  }
-
-  [data-loading],
-  [data-error] {
-    text-align: center;
-  }
-
-  .weather-details {
-    display: grid;
-    gap: var(--sz-500);
-
-    @media (width>=35em) {
-      grid-template-columns: 1fr 1fr;
-      align-items: center;
-    }
-  }
-
-  [data-temperature] {
-    font-size: var(--fs-700);
-    font-weight: var(--fw-medium);
-  }
-
-  [data-description] {
-    font-size: var(--fs-400);
-    letter-spacing: -0.025em;
-    font-weight: var(--fw-medium);
-  }
-
-  .meta-details {
-    background-color: var(--clr-surface-3);
-    padding: var(--sz-500);
-    border-radius: var(--br-400);
-  }
-
-  .extra-details dd {
-    font-weight: var(--fw-medium);
-  }
-
-  .extra-details {
-    display: grid;
-    gap: var(--sz-100);
-  }
-
-  .extra-details div {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .calc-time {
-    text-align: center;
-    color: var(--clr-text-2);
-    font-size: var(--fs-200);
-
-    @media (width>=35em) {
-      grid-column: 1/3;
-    }
-  }
-
-  [data-time] {
-    font-weight: var(--fw-medium);
   }
 }
 
