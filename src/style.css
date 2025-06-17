@@ -109,6 +109,8 @@
     max-width: 40rem;
     margin-inline: auto;
     padding-inline: var(--sz-500);
+    min-height: 60vh;
+    align-content: center;
   }
 
   h1,
@@ -199,14 +201,13 @@
     text-align: center;
 
     h1 {
-      font-size: var(--fs-700);
-      line-height: 1.1;
+      font-size: var(--fs-600);
       font-weight: var(--fw-medium);
     }
   }
 
   .weather {
-    margin-block: var(--sz-600);
+    padding-block: var(--sz-600);
 
     form {
       display: flex;
@@ -250,8 +251,8 @@
         var(--clr-surface-2)
       );
       padding: var(--sz-500);
+      margin-block-start: var(--sz-500);
       border-radius: var(--br-500);
-      margin-block: var(--sz-600);
 
       [data-loading],
       [data-error] {
