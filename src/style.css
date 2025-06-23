@@ -1,24 +1,16 @@
-/* https://gwfh.mranftl.com/fonts */
 @font-face {
-  font-display: swap;
-  font-family: "Poppins";
+  font-family: "Inter";
+  src: url("/fonts/InterVariable.woff2") format("woff2");
+  font-weight: 100 900;
   font-style: normal;
-  font-weight: 400;
-  src: url("/fonts/poppins/poppins-v23-latin-regular.woff2") format("woff2");
+  font-display: swap;
 }
 @font-face {
+  font-family: "Inter";
+  src: url("/fonts/InterVariable-Italic.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: italic;
   font-display: swap;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  src: url("/fonts/poppins/poppins-v23-latin-500.woff2") format("woff2");
-}
-@font-face {
-  font-display: swap;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 700;
-  src: url("/fonts/poppins/poppins-v23-latin-700.woff2") format("woff2");
 }
 
 @layer tokens {
@@ -54,7 +46,7 @@
     --br-circle: 50%;
     --br-pill: 100vw;
 
-    --ff-sans: "Poppins", sans-serif;
+    --ff-sans: "Inter", sans-serif;
 
     --fw-regular: 400;
     --fw-medium: 500;
@@ -102,6 +94,7 @@
     background: linear-gradient(var(--clr-surface-3), var(--clr-surface-4));
 
     font-family: var(--ff-sans);
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
     line-height: 1.5;
   }
 
