@@ -1,15 +1,8 @@
 @font-face {
-  font-family: "Inter";
-  src: url("/fonts/InterVariable.woff2") format("woff2");
-  font-weight: 100 900;
+  font-family: "Space Grotesk";
+  src: url("/fonts/SpaceGrotesk-Variable.woff2") format("woff2");
+  font-weight: 300 700;
   font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Inter";
-  src: url("/fonts/InterVariable-Italic.woff2") format("woff2");
-  font-weight: 100 900;
-  font-style: italic;
   font-display: swap;
 }
 
@@ -46,7 +39,7 @@
     --br-circle: 50%;
     --br-pill: 100vw;
 
-    --ff-sans: "Inter", sans-serif;
+    --ff-sans: "Space Grotesk", sans-serif;
 
     --fw-regular: 400;
     --fw-medium: 500;
@@ -94,7 +87,6 @@
     background: linear-gradient(var(--clr-surface-3), var(--clr-surface-4));
 
     font-family: var(--ff-sans);
-    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
     line-height: 1.5;
   }
 
