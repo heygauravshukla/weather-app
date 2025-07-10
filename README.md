@@ -5,18 +5,14 @@ A web application built with vanilla HTML, CSS, and JavaScript, powered by the O
 ## Table of Contents
 
 - [Overview](#overview)
-
   - [The Challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
-
 - [My Process](#my-process)
-
   - [Built With](#built-with)
   - [What I Learned](#what-i-learned)
   - [Continued Development](#continued-development)
   - [Useful Resources](#useful-resources)
-
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
@@ -67,7 +63,6 @@ In future updates, I will:
 
 ### Useful Resources
 
-- [Google Webfonts Helper](https://gwfh.mranftl.com/fonts) – A helpful tool to download `.woff` font files for self-hosting Google Fonts.
 - [Open Props](https://open-props.style) – A collection of ready-to-use, supercharged CSS variables. I used it for colors.
 - [Consistent, Fluidly Scaling Type and Spacing](https://css-tricks.com/consistent-fluidly-scaling-type-and-spacing) – An article by Andy Bell on CSS-Tricks. Helped me explore fluid type and spacing scales.
 - [Fluid Space Calculator](https://utopia.fyi/space/calculator) – An online tool by Utopia. Helped me define spacing and sizing scales.
